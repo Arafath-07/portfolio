@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Gideon+Roman&family=Kalnia+Glaze:wght@100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Gideon Roman", serif;
+
+}
+body{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    z-index: 1;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+}
+header ul li{
+    margin: 10px  ;
+    list-style: none;  
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+i{
+    margin: 5px;
+}
+header ul li a:hover{
+    text-shadow: 7px 6px 9px red;
+}
+header img{
+    width: 50px;
+    height: 5opx;
+    border: 3px solid whitesmoke;
+    border-radius: 30px;
+}
+#banner{
+    width: 100%;
+    height: 400px;
+   
+}
+
+#welcome{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 30%;
+    left: 30%;
+    font-size: larger;
+    background-color: rgba(255, 255, 255, 0.326);
+    border: 6px solid black;
+    padding: 30px;
+    text-shadow: 3px 4px 3px rgb(8, 8, 8);
+}
+#sect{
+    width: 100%;
+    height: 400px; 
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+align-items: center;
+margin: 30px 5px;
+}
+.col2{
+    color: white;
+    font-size:larger;
+    text-shadow: 3px 4px 3px red;
+}
+#about{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 600px;
+    color: white;
+}
+h1{
+    text-shadow: 3px 4px 3px red;
+    color: white;
+}
+h2{
+    text-shadow: 3px 4px 3px blue; 
+}
+col1{
+    padding:40px;
+}
+.col p{
+    text-align: justify;
+    font-size: smaller;
+}
+#proj{
+color: white;    
+}
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .cls{
+    width: 150px;
+    border: 2px solid white;
+    padding: 20px;
+  }
+  #con{
+    text-align: center;
+  }
+  input{
+    width: 50%;
+    height: 30px;
+    
+  }
+  input:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(134, 205, 231);
+  }
+  textarea{
+    width: 50%;
+    height: 200px;
+  }
+  textarea:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(134, 205, 231);
+  }
+button:hover{
+    color: rgb(0, 0, 0);
+    background-color: red;
+}
+button{
+    width: 50%;
+    height: 30px;
+}
